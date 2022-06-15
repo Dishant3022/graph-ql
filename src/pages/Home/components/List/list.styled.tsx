@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const ListItem = styled.div`
@@ -6,10 +5,11 @@ const ListItem = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 30px;
     width: 100%;
     height: 100%;
-    margin-top: 60px;
+    margin-top: 45px;
+    overflow: auto;
+    margin-bottom: 30px;
 `;
 
 const Item = styled.div`
@@ -19,6 +19,7 @@ const Item = styled.div`
     justify-content: center;
     align-items: center;
     border-bottom: 1px white solid;
+    padding: 18px;
 `;
 
 const ItemChileOne = styled.div`
@@ -47,32 +48,12 @@ const First = styled.div`
     color: #fcfbfc;
     margin-bottom: 1px;
     font-size: 25px;
+    text-transform: uppercase;
 `;
 const Second = styled.div`
     color: #fcfbfc;
     opacity: 0.5;
     font-size: 15px;
 `;
-const List = () => {
-    return (
-        <ListItem>
-            <Item>
-                <ItemChileOne>
-                    <img src="./assets/icon.svg" alt="trophy" height="60px" />
-                </ItemChileOne>
-                <ItemChileTwo>
-                    <InnerList>
-                        <First>BTC</First>
-                        <Second>7842.27 €</Second>
-                    </InnerList>
-                </ItemChileTwo>
 
-                <ItemChileThree>
-                    <img src="./assets/close.png" alt="close" height="10px" width="10px" />
-                </ItemChileThree>
-            </Item>
-        </ListItem>
-    );
-};
-
-export default List;
+export { ListItem, Item, ItemChileOne, ItemChileTwo, ItemChileThree, InnerList, First, Second };

@@ -1,7 +1,8 @@
-import Global from "./components/Global";
+// import Global from "./components/Global";
+import { HomePage } from "./pages";
 
 function App() {
-    return <Global />;
+    return <HomePage />;
 }
 
 export default App;
